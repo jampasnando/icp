@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title mode="ios">BIENALES</ion-title>
+    <!-- <div class="skippy"><img src="../../assets/imagenes/Skippy-circle.png" alt=""></div> -->
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content>
+<ion-grid>
+  <ion-row>
+    <ion-col>Año</ion-col>
+    <ion-col>Mes</ion-col>
+    <ion-col>Total</ion-col>
+    <ion-col>Env</ion-col>
+    <ion-col>Rev</ion-col>
+    <ion-col>Falta</ion-col>
+  </ion-row>
+  <ion-row *ngFor="let unreg of bie,let i=index"> 
+    <ion-col>{{unreg.ano}}</ion-col>
+    <ion-col>{{unreg.mes}}</ion-col>
+    <ion-col>{{unreg.cantidad}}</ion-col>
+    <ion-col>{{unreg.subidos}}</ion-col>
+    <ion-col>{{unreg.revisados}}</ion-col>
+    <ion-col [routerLink]="['/lista',proy,unreg.ano,unreg.mes]"><div>{{unreg.cantidad - unreg.subidos}}</div></ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

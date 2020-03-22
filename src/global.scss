@@ -24,3 +24,12 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+div[role=dialog]{
+    width: 95% !important;
+    height: 80% !important;
+    border-radius: 10px 10px !important;
+}
+ion-toolbar{
+    --background: url('./assets/imagenes/titulo.png') no-repeat center center / cover!important;
+    color:white;
+  }

@@ -1,0 +1,36 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>marco</ion-title>
+    
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <!-- <div class="cerrar" (click)="cierra()">X</div> -->
+<div class="divmarcofoto">
+  <ion-slides>
+    <ion-slide>
+      <div class="mitad"></div>
+      <div class="sup"></div>
+      <div class="inf"></div>
+      <img [src]="fotomarco" alt="">
+    </ion-slide>
+  </ion-slides>
+    
+    
+</div>
+</ion-content>
+<ion-footer>
+  <div class="botones">
+    <ion-button (click)="sube()">
+      <ion-icon name="cloud-upload"></ion-icon>
+    </ion-button>
+    <ion-button (click)="cierra()">
+      [ Cerrar ]
+    </ion-button>
+    <ion-button (click)="guarda()">
+      <ion-icon name="folder-open" mode="ios"></ion-icon>
+    </ion-button>
+
+  </div>
+</ion-footer>

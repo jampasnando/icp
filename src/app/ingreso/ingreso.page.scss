@@ -1,0 +1,12 @@
+ion-content{
+    --background: url('../../assets/imagenes/fondo4.jpg') no-repeat center center / cover!important;
+    height: 100% !important;
+}
+.frase{
+    position: absolute;
+    top:5em;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2em;
+}

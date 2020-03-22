@@ -1,0 +1,24 @@
+ion-content{
+    --background: url('../../assets/imagenes/fondo4.jpg') no-repeat center center / cover!important;
+    height: 100% !important;
+}
+
+.skippy{
+    position: absolute;
+    top:2px;
+    right: 2px;
+    width: 2em;
+}
+ion-grid ion-row:first-child{
+    font-weight: bolder;
+    text-align: center;
+    background-color: rgba($color: white, $alpha: 0.5);
+}
+ion-grid ion-row:not(first-child){
+    text-align: center;
+}
+ion-grid ion-row:not(first-child) ion-col:last-child div{
+    border-radius: 25% 25%;
+    padding:2px;
+    background-color: rgba($color: orange, $alpha: 0.7);
+}

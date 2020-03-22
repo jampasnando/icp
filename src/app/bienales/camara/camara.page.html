@@ -1,0 +1,19 @@
+<div class="superior" [ngStyle]="{'top':cincoporciento}"></div>
+<div class="vertical" [ngStyle]="{'top':topvertical,'height':altovertical}"></div>
+<div class="inferior" [ngStyle]="{'top':bottominferior}"></div>
+<div class="cod" [ngStyle]="{'top':topcod}">{{codigo}}</div>
+<div class="codigo" [ngStyle]="{'height':altocodigo}">
+  {{nombre}}
+  <ion-button (click)="tomafoto()">
+<ion-icon name="camera"></ion-icon>
+  </ion-button>
+</div>
+<div class="captura">
+  <div  (click)="agranda(foto)" *ngIf="foto!=''"><img [src]="foto" alt=""></div>
+  <div  (click)="agranda(foto2)" *ngIf="foto2!=''"><img [src]="foto2" alt=""></div>
+  <div  (click)="agranda(foto3)" *ngIf="foto3!=''"><img [src]="foto3" alt=""></div>
+  <!-- <ion-button *ngIf="foto!=''" (click)="guarda()" class="btnsubir">
+    <ion-icon name="cloud-upload"></ion-icon>
+  </ion-button> -->
+</div>
+<div class="flash"><ion-toggle color="danger" checked="false" (ionChange)="cambiaflash($event)" ></ion-toggle><div>Flash</div></div>

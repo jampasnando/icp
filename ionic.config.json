@@ -1,5 +1,7 @@
 {
   "name": "icp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

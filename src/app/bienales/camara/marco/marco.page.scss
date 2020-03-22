@@ -1,0 +1,44 @@
+.cerrar{
+    position: absolute;
+    top:0;
+    right:0;
+    border-radius: 50% 50%;
+    padding: 1px 4px;
+    background-color: black;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color:white;
+    z-index: 10;
+}
+.divmarcofoto{
+    padding: 5px;
+    position: relative;
+}
+.botones{
+    display: flex;
+    justify-content: space-between;
+}
+.mitad{
+    position: absolute;
+    height:100%;
+    width: 2px;
+    left: 50%;
+    background-color: rgba($color: red, $alpha: 0.5);
+    z-index: 20;
+}
+.sup{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: rgba($color: red, $alpha: 0.5);
+    z-index: 20;
+    top:5%;
+}
+.inf{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: rgba($color: red, $alpha: 0.5);
+    z-index: 25;
+    bottom:5%;
+}
